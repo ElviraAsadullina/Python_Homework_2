@@ -1,4 +1,4 @@
-def check_for_input_error(a):
+def check_for_input_error():
     while True:
         try:
             a = float(input('Введите любое вещественное число: '))
@@ -17,10 +17,8 @@ def list_from_float(a):
     return listed_a
 def get_sum(list_a):
     sum = 0
-    for i in listed_number:
+    for i in list_a:
         sum += i
     return sum
-number = None
-number = check_for_input_error(number)
-listed_number = list_from_float(number)
-print(f'Сумма элементов введенного числа = {get_sum(listed_number)}')
+number = check_for_input_error()
+print(f'Сумма элементов введенного числа = {get_sum(list_from_float(number))}')
