@@ -22,8 +22,4 @@ def get_factorial(a):
         factorial *= i
     return factorial
 N = check_for_input_error()
-# listed_N = list_from_int(N)
 print(f'Факториал введенного числа = {get_factorial(list_from_int(N))}')
-
-# listed_N = list_from_int(N)
-# print(f'Факториал введенного числа = {get_factorial(listed_N)}')
