@@ -10,16 +10,13 @@ def check_for_input_error():
             continue
         break
     return a
-def list_from_int(a):
-    listed_a = []
-    stringed_a = str(a)
-    for i in stringed_a:
-        listed_a.append(int(i))
-    return listed_a
-def get_factorial(a):
+def get_roll_of_factorial(a):
+    roll = []
     factorial = 1
-    for i in a:
+    for i in range(1, a + 1):
         factorial *= i
-    return factorial
+        roll += [factorial]
+    return roll
 N = check_for_input_error()
-print(f'Факториал введенного числа = {get_factorial(list_from_int(N))}')
+# catalogue = get_roll_of_factorial(N)
+print(f'Набор произведений чисел от 1 до {N}:  {get_roll_of_factorial(N)}')
